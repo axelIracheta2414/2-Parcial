@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>English Prep · Inglés Técnico II — Repaso para el parcial</title>
+  <meta name="description" content="Aplicación interactiva para repasar Inglés Técnico II: Simple Past, Past Continuous, Present Perfect, Since/For, Just/Yet/Already, Passive Voice, writing de 100 palabras y oral sobre chatbots e inventores.">
+  <meta name="theme-color" content="#070b1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#/">
+        <span class="brand-logo">EP</span>
+        <span class="brand-text"><strong>English Prep</strong><small>Inglés Técnico II</small></span>
+      </a>
+      <nav id="side-nav" class="side-nav"></nav>
+      <div class="sidebar-foot">
+        <button class="btn ghost sm full" id="theme-toggle" type="button"></button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="icon-btn" id="menu-btn" type="button" aria-label="Abrir menú"></button>
+        <div class="topbar-title" id="topbar-title">English Prep</div>
+        <div class="topbar-actions">
+          <span class="pill countdown-pill" id="countdown-pill"></span>
+        </div>
+      </header>
+      <main id="view" class="view" tabindex="-1"></main>
+    </div>
+
+    <nav class="bottom-nav" id="bottom-nav" aria-label="Navegación móvil"></nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/helpers.js"></script>
+  <script src="js/data/grammar-past.js"></script>
+  <script src="js/data/grammar-perfect.js"></script>
+  <script src="js/data/grammar-passive.js"></script>
+  <script src="js/data/verbs.js"></script>
+  <script src="js/data/readings.js"></script>
+  <script src="js/data/writing.js"></script>
+  <script src="js/data/oral.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
